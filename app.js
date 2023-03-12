@@ -31,7 +31,7 @@ const app = {
     {
       name: "Matsuri",
       singer: "Fujii Kaze",
-      path: "./src/playlist/Matsuri.mp3",
+      path: "./src/playlist/matsuri.mp3",
       image: "./src/cdthumb/matsuri.jpg"
     },
     {
