@@ -73,7 +73,7 @@ const app = {
     {
       name: "Unholy",
       singer: "Sam Smith",
-      path: "./src/playlist/unholy.mp3",
+      path: "./src/playlist/Unholy.mp3",
       image:
         "./src/cdthumb/unholy.png"
     },
