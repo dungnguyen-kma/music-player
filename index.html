@@ -4,8 +4,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="/Icon/themify-icons/themify-icons.css">
 <div class="player">
+  
   <!-- Dashboard -->
   <div class="dashboard">
     <!-- Header -->
@@ -39,9 +40,14 @@
         <i class="fas fa-random"></i>
       </div>
     </div>
-
-    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
-
+    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100"> 
+    <!-- Volumn control -->
+    <div class="vol-ctl">
+      <div class="vol-ctl-wrapper">
+        <i class="ti-volume vol-icon vol-item"></i>
+        <input id="volume" class="volume-bar vol-item" type="range" value="50" step="1" min="0" max="100">
+      </div>
+    </div>
     <audio id="audio" src=""></audio>
   </div>
 

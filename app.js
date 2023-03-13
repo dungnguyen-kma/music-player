@@ -9,6 +9,7 @@ const cdThumb = $(".cd-thumb");
 const audio = $("#audio");
 const playBtn = $(".btn-toggle-play");
 const progress = $("#progress");
+const volume = $("#volume");
 const prevBtn = $(".btn-prev");
 const nextBtn = $(".btn-next");
 const randomBtn = $(".btn-random");
@@ -98,8 +99,6 @@ const app = {
   ],
   setConfig: function (key, value) {
     this.config[key] = value;
-    // (2/2) Uncomment the line below to use localStorage
-    // localStorage.setItem(PlAYER_STORAGE_KEY, JSON.stringify(this.config));
   },
   render: function () {
     const htmls = this.songs.map((song, index) => {
@@ -158,7 +157,6 @@ const app = {
         audio.pause();
       } else {
         audio.play();
-        audio.volume = 0.1;
       }
     };
 
@@ -196,6 +194,12 @@ const app = {
       audio.currentTime = seekTime;
     };
 
+    // xử lý âm lượng
+    // handle volume change
+    volume.onchange = function (e) {
+      const seekVolume = e.target.value / 100;
+      audio.volume = seekVolume;
+    };
     // Khi next song
     // When next song
     nextBtn.onclick = function () {

@@ -110,7 +110,6 @@
   
   .progress {
     width: 100%;
-    -webkit-appearance: none;
     height: 6px;
     background: #d3d3d3;
     outline: none;
@@ -119,13 +118,25 @@
     transition: opacity 0.2s;
   }
   
-  .progress::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 12px;
-    height: 6px;
-    background-color: var(--primary-color);
-    cursor: pointer;
+  /* VOLUMN CONTROL */
+  .vol-ctl {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    transform: translateX(-9px);
+    color: black;;
+  }
+
+  .vol-ctl .vol-ctl-wrapper {
+    display: flex;;
+  }
+  
+  .vol-ctl .vol-item {
+    padding: 0 3px;
+  }
+
+  .vol-ctl .vol-icon {
+    line-height: 25px;
   }
   
   /* PLAYLIST */
