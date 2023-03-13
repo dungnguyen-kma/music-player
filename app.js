@@ -85,6 +85,22 @@ const app = {
       image:
         "./src/cdthumb/cuoi-cung-thi.jpg"
     },
+    {
+      name: "Tôi muốn quên em",
+      singer: "Phan Mạnh Quỳnh",
+      path:
+        "./src/playlist/toi-muon-quen-em.mp3",
+      image:
+        "./src/cdthumb/toi-muon-quen-em.jpg"
+    },
+    {
+      name: "Dừng lại và quên thôi",
+      singer: "Trung Quân",
+      path:
+        "./src/playlist/dung-lai-va-quen-thoi.mp3",
+      image:
+        "./src/cdthumb/dung-lai-va-quen-thoi.png"
+    },
   ],
   setConfig: function (key, value) {
     this.config[key] = value;
