@@ -164,6 +164,7 @@ const app = {
         audio.pause();
       } else {
         audio.play();
+        audio.volume = 0.1;
       }
     };
 
