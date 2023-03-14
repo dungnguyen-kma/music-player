@@ -198,7 +198,9 @@ const app = {
     // handle volume change
     volume.onchange = function (e) {
       const seekVolume = e.target.value / 100;
+      const showVol =  volume.parentElement.lastElementChild;
       audio.volume = seekVolume;
+      showVol.innerHTML = `${Number.parseInt(seekVolume*100)}`;
     };
     // Khi next song
     // When next song
